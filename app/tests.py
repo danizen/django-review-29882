@@ -2,12 +2,12 @@
 from __future__ import unicode_literals
 
 from django.test import TestCase
-
-# Create your tests here.
+from django.db.models import Func, F
+from app.models import *
 
 
 class TestFixturesAndUDF(TestCase):
-
+    fixtures = ['sarahbooks']
 
     def test_fixture(self):
         sarah_counts = Author.objects.filter(first_name='Sarah').count()

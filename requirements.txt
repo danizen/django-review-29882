@@ -1,3 +1,6 @@
 django
 pyaml
 mysqlclient
+
+# This is installed for running tests in parallel
+tblib
